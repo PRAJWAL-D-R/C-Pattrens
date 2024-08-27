@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>patten</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#flip").click(function(){
+$("#panel").slideDown("slow");
+
+});});
+    </script>
+    <style>
+    .topnav { 
+        overflow: hidden;
+        background-color: #333;
+        height: 50px;
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 15px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color:#151B54;
+      }
+      
+      .topnav a.active {
+        background-color: #151B54;
+        color: white;
+      }
+      .image1{ border-radius:50%;
+                height:5%;
+                width:12%;}
+      .head{
+        background-color: #04045f;
+        padding:0.1px 180px 1px 50px;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+         height: 50px;
+           
+      }
+      h3{
+        padding-bottom: 66px;
+      }
+      body{
+        background-image: url('bck3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .code{
+         float:left;
+         width: 50%;
+         padding-left: 120px;
+         font-size: 30px;
+         
+      }
+      button {
+  border: none;
+  color: white;
+  padding: 5px 52px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #04AA6D;
+  float: right;
+}
+      #panle{
+        
+         float:left;
+         width: 50%;
+         padding-left: 160px;
+         font-size: 30px;
+         
+      }
+      
+      pre{
+        font-size: 22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+         
+         color: #ddd;
+      }
+      p{
+          background-color: #f3f6f8;
+          width: 40%;
+          padding-top: 50px;
+          color: black;
+          background-color: #ddd;
+          
+      }
+      
+      #panel {
+      padding: 5px;
+      text-align: center;
+    }
+    
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+    #flip{
+
+    }
+    .s{
+      align-items:center;
+    }
+      </style>
+      
+    </head>
+<body>
+    <div class="topnav">
+        <a href="home.php"><img src="hm.png" class="image1">Home</a>
+        <a href="about2.php"><img src="fee.png" class="image1">Feed back</a>
+      </div> 
+    <div class="head">
+        <h3>C Pattern Program</h3>
+    </div>
+    <div class="s">
+    <div class="code">
+    <code><pre>
+        int main() 
+        {
+            int i, j, rows=6;
+            for (i = 1; i < rows; ++i) 
+            {
+                for (j = 1; j <= rows; ++j) 
+                {
+                     printf("* ");
+                }
+                  printf("\n");
+            }
+               return 0;
+        }
+        
+    </pre>   
+    </code>
+    <button id="flip" value="Run">Run</button>
+    </div><br><br><br><br><div class="code" id="panel">
+        <p style="color: rgb(32, 7, 147);">Out put:<br><br>
+    <script>
+                   let I,n=6,k;
+            for(let i=1;i<n;i++)
+            {
+                for(let k=1;k<n-1+1;k++)
+                {
+                    document.write(" * ");
+                }
+                                   document.write("</br>");
+  }
+
+        </script>
+     </p>   </div></div>
+</body>
